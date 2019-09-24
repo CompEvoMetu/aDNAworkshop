@@ -15,6 +15,7 @@
 * **bwa:** [Page/Manual](http://bio-bwa.sourceforge.net/bwa.shtml), [Publication(1)](https://www.ncbi.nlm.nih.gov/pubmed/19451168), [Publication(2)](https://www.ncbi.nlm.nih.gov/pubmed/20080505)
 * **samtools:** [Page/Manual](http://www.htslib.org/doc/samtools.html), [Publication(1)](https://www.ncbi.nlm.nih.gov/pubmed/19505943), [Publication(2)](https://www.ncbi.nlm.nih.gov/pubmed/21903627)
 * **plink:** [Page/Manual](http://zzz.bwh.harvard.edu/plink/pdf.shtml), [Publication(1)](https://www.ncbi.nlm.nih.gov/pubmed/17701901)
+* **vcftools:** [Page/Manual](https://vcftools.github.io/documentation.html), [Publication(1)](https://academic.oup.com/bioinformatics/article/27/15/2156/402296)
 * **PMDtools:** [Page/Manual](https://code.google.com/archive/p/pmdtools/), [Publication(1)](https://www.ncbi.nlm.nih.gov/pubmed/?term=Separating+endogenous+ancient+DNA+from+modern+day+contamination+in+a+Siberian+Neandertal)
 * **contaMix:** [Publication(1)](https://www.ncbi.nlm.nih.gov/pubmed/?term=revised+timescale+for+human+evolution+based+on+ancient+mitochondrial+genomes)
 * **schmutzi:** [Page/Manual](https://bioinf.eva.mpg.de/schmutzi/), [Publication(1)](https://www.ncbi.nlm.nih.gov/pubmed/26458810)
@@ -28,7 +29,8 @@
   - [fastq](https://pythonhosted.org/OBITools/fastq.html)
   - [bam/sam](https://sites.google.com/site/bioinformaticsremarks/bioinfo/sam-bam-format)
   - [bed](https://www.ensembl.org/info/website/upload/bed.html)
-  - [plink (ped/map-tped/tfam-bed/bim/fam)](http://zzz.bwh.harvard.edu/plink/pdf.shtml))
+  - [vcf](https://samtools.github.io/hts-specs/VCFv4.2.pdf)
+  - [plink (ped/map-tped/tfam-bed/bim/fam)](http://zzz.bwh.harvard.edu/plink/pdf.shtml)
   - [eigenstrat (geno/snp/ind)](https://reich.hms.harvard.edu/software/InputFileFormats)
 
 
