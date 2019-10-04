@@ -10,7 +10,9 @@
 
 **Price:** Free
 
-**Contact and application:** ancientdna.workshop@gmail.com
+**Contact:** ancientdna.workshop@gmail.com
+
+**Application:**
 
 - All applicant must fill out the [application form](https://docs.google.com/forms/d/e/1FAIpQLSfNDIliERI2rWa_VFyJ8Di96vk9d3XfXke2p7nK6Fz6FDzjPg/viewform?vc=0&c=0&w=1) no later than November 10, 2019
 - Excellence of motivation letter and relevance of applicants goals, study subject and past experience to topics covered in the workshop.
