@@ -25,6 +25,7 @@
 **Instructors**
 - Dilek Koptekin, Department of Health Informatics, Graduate School of Informatics, METU
 - Ekin Sağlıcan, Department of Biological Sciences, METU
+- N. Ezgi Altınışık, Department of  Anthropology, Hacettepe University
 - Kıvılcım Başak Vural, Department of Biological Sciences, METU
 - Mehmet Somel, Department of Biological Sciences, METU
 
