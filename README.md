@@ -10,17 +10,7 @@
 
 **Price:** Free
 
-**Contact:** ancientdna.workshop@gmail.com
-
-**Application:**
-
-- All applicant must fill out the [application form](https://docs.google.com/forms/d/e/1FAIpQLSfNDIliERI2rWa_VFyJ8Di96vk9d3XfXke2p7nK6Fz6FDzjPg/viewform?vc=0&c=0&w=1) no later than November 10, 2019
-- Excellence of motivation letter and relevance of applicants goals, study subject and past experience to topics covered in the workshop.
-- Familiarity with statistical and computing languages
-- Past attendance to such courses/seminars/workshops (first time applicants will be given priority)
-- Institutional and cultural diversity
-- Priority will be given to graduate students (MSc/PhD) and early stage post-docs.
-- You should bring a **laptop** to the course.
+**Application:** is no longer possible! For questions write ancientdna.workshop@gmail.com
 
 **Instructors**
 - Dilek Koptekin, Department of Health Informatics, Graduate School of Informatics, METU
