@@ -23,5 +23,5 @@
 
 
 ### Sample Dataset:
-**Base-dataset:** Human Origins Array + XX ancient individuals <br/>
+**Base-dataset:** Human Origins Array + 12 ancient individuals <br/>
 **Ancient samples:** [Kılınç et al 2016](https://www.cell.com/current-biology/fulltext/S0960-9822(16)30850-8) <br/>
