@@ -19,7 +19,7 @@ pong=NA
 R-studio
 ```
 
-The dataset has 2068 present-day individuals  and 21 ancient individuals, and  616 600 markers.
+The dataset has 2068 present-day individuals  and 21 ancient individuals, and  616 600 autosomal markers.
 
 Genotypes of Affymetrix Human Origins present-day individuals downloaded from [here](https://reich.hms.harvard.edu/datasets) ([Lazaridis et al 2014](https://www.nature.com/articles/nature13673), [Lazaridis et al 2016](https://www.nature.com/articles/nature19310))
 
