@@ -19,7 +19,10 @@ pong=NA
 R-studio
 ```
 
-The dataset has 2068 present-day individuals and 21 ancient individuals, and  616 600 markers.
+The dataset has 2068 present-day individuals  and 21 ancient individuals, and  616 600 markers.
+
+Genotypes of Affymetrix Human Origins present-day individuals downloaded from [here](https://reich.hms.harvard.edu/datasets) ([Lazaridis et al 2014](https://www.nature.com/articles/nature13673), [Lazaridis et al 2016](https://www.nature.com/articles/nature19310))
+
 
 ## Pipeline
 
@@ -34,7 +37,7 @@ mkdir -p admixture
 tail -n +2069 ${data}.pedind > ancient.indv
 $plink --file ${data} --keep ancient.indv --geno 0.99 --make-bed --out ancient.geno99
 
-# To keep only modern individuals in a file and remove variants where more than 99.9% of genotypes are missing in ancient data
+# To keep only modern individuals (reference panel) in a file and remove variants where more than 99.9% of genotypes are missing in ancient data
 head -n 2068 ${data}.pedind > modern.indv
 awk '{print $2}' ancient.geno99.bim > snps
 $plink --file ${data} --keep modern.indv --extract snps --make-bed --out modern
@@ -55,10 +58,46 @@ mkdir -p k10/run01
 cd  k10/run1
 admixture -s $RANDOM /mnt/NAS/workshop/admixture/modern.admixsnps.bed 10
 ```
-Output:
+**Two output:**
 
-- modern.admixsnps.10.Q (the ancestry fractions)
-- modern.admixsnps.10.P (the allele frequencies of the inferred ancestral populations)
+> 1. modern.admixsnps.10.Q (the ancestry fractions)
+
+```bash
+head modern.admixsnps.10.Q
+```
+
+```
+0.158028 0.672972 0.002553 0.025055 0.089839 0.000010 0.035225 0.015474 0.000833 0.000010
+0.000010 0.908173 0.000010 0.000010 0.038680 0.000010 0.053078 0.000010 0.000010 0.000010
+0.000010 0.999910 0.000010 0.000010 0.000010 0.000010 0.000010 0.000010 0.000010 0.000010
+0.000010 0.727451 0.000010 0.072127 0.093945 0.000869 0.050367 0.047225 0.000010 0.007985
+0.093496 0.759203 0.000010 0.009948 0.036727 0.000010 0.054153 0.021743 0.008708 0.016003
+0.068244 0.890481 0.000010 0.000010 0.004674 0.000010 0.036540 0.000010 0.000010 0.000010
+0.000010 0.728189 0.000010 0.214340 0.000010 0.000011 0.040328 0.013217 0.003875 0.000010
+0.000010 0.673473 0.005429 0.116532 0.000010 0.000010 0.094209 0.098506 0.000010 0.011812
+0.000010 0.000010 0.000017 0.040367 0.000010 0.000010 0.000010 0.000010 0.701821 0.257735
+0.000010 0.000010 0.000010 0.028053 0.000010 0.000010 0.000010 0.000010 0.729116 0.242761
+```
+
+> 2. modern.admixsnps.10.P (the allele frequencies of the inferred ancestral populations)
+
+
+```bash
+head modern.admixsnps.10.P
+```
+
+```
+0.330951 0.641307 0.795701 0.871557 0.518768 0.927323 0.769164 0.803492 0.630176 0.925985
+0.876535 0.602634 0.820633 0.835990 0.727728 0.940231 0.795822 0.778324 0.453960 0.887941
+0.704559 0.465145 0.707353 0.964257 0.804436 0.075585 0.904571 0.911557 0.590574 0.793412
+0.266606 0.499776 0.643588 0.775814 0.602188 0.175487 0.695923 0.720671 0.621338 0.739245
+0.461696 0.326021 0.999990 0.962489 0.405563 0.999990 0.855227 0.913788 0.962554 0.950173
+0.462990 0.781608 0.867691 0.549678 0.400188 0.796729 0.591254 0.515443 0.570955 0.835824
+0.999990 0.999990 0.999990 0.975038 0.999990 0.999990 0.992974 0.999989 0.999990 0.999990
+0.999990 0.999990 0.831823 0.903551 0.989368 0.807794 0.843045 0.920314 0.610000 0.886243
+0.636211 0.430156 0.798091 0.613824 0.656324 0.759256 0.560640 0.636532 0.603132 0.837607
+0.502172 0.671637 0.837731 0.977087 0.925560 0.645656 0.906791 0.855188 0.932370 0.971443
+```
 
 **Projection:** estimating ancient individual ancestry is to “project” the new samples on to the population structure (allele frequencies) learned from the reference panels.
 
