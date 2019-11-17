@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-Reading materials: [Patterson et al 2012](https://www.genetics.org/content/192/3/1065) ; [Peter 2016](https://www.genetics.org/content/202/4/1485) ; [Harris and DeGiorgio](https://doi.org/10.13110/humanbiology.89.1.02)
+Reading materials: [Patterson et al 2012](https://www.genetics.org/content/192/3/1065) ; [Peter 2016](https://www.genetics.org/content/202/4/1485) ; [Harris and DeGiorgio 2016](https://doi.org/10.13110/humanbiology.89.1.02)
 
 ## Prerequisites
 
@@ -142,6 +142,7 @@ We do this for Boncuklu. For this we'll use a file with the geographic location 
 
 ```R
 install.packages(c("rworldxtra", "rworldmap"))
+install.packages(c("viridis", "cowplot","googleway","ggplot2","ggrepel","ggspatial","libwgeom","sf","rnaturalearth", "rnaturalearthdata", "rgeos"))
 library(rworldxtra)
 library(rworldmap)
 
