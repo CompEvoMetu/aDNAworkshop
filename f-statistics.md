@@ -147,7 +147,7 @@ library(rworldxtra)
 library(rworldmap)
 
 # geographic location dataset
-ho3 <- as.matrix(read.table("ho3.csv", head=T, sep=",", comment.char = "", quote="", fill=T))
+ho3 <- as.matrix(read.table("/mnt/NAS/workshop/f-stat/ho3.csv", head=T, sep=",", comment.char = "", quote="", fill=T))
 dim(ho3)
 head(ho3)
 pops <- unique(ho3[,"PopulationID.In_our_dataset."])
@@ -497,8 +497,8 @@ for (myPop in c("Boncuklu", "Tepecik", "Levant_N", "Iran_N")) {
     cols <- ifelse(x$p < 0.05, "tomato", "pink")
     # plot
     plot(x$f4, 1:nrow(x), yaxt = "n", ylab="", xlab="f4", xlim=c(-0.01,0.01), pch=19, col=cols)
-    axis(side = 2, labels = as.character(x$A), at = 1:nrow(x), las=2)
-    axis(side = 4, labels = as.character(x$B), at = 1:nrow(x), las=2)
+    axis(side = 2, labels = as.character(x$B), at = 1:nrow(x), las=2)
+    axis(side = 4, labels = as.character(x$A), at = 1:nrow(x), las=2)
     abline(v=0, lty=3)
     axis(side = 3, labels = myPop, at = 0, tick = F, font = 2)
     segments((x$f4 - 3*x$se), 1:nrow(x), (x$f4 + 3*x$se), 1:nrow(x) , col=cols, lwd=2)
