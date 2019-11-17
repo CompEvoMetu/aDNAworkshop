@@ -54,7 +54,7 @@ $plink --bfile ancient.geno99 --extract plink.prune.in --make-bed --out ancient.
 Assume the individuals derive their ancestry from 10 ancestral population:
 
 ```bash
-mkdir -p k10/run01
+mkdir -p k10/run1
 cd  k10/run1
 admixture -s $RANDOM /mnt/NAS/workshop/admixture/modern.admixsnps.bed 10
 ```
@@ -63,7 +63,7 @@ admixture -s $RANDOM /mnt/NAS/workshop/admixture/modern.admixsnps.bed 10
 > 1. modern.admixsnps.10.Q (the ancestry fractions)
 
 ```bash
-head modern.admixsnps.10.Q
+head /mnt/NAS/workshop/admixture/k10/run1/modern.admixsnps.10.Q
 ```
 
 ```
@@ -83,7 +83,7 @@ head modern.admixsnps.10.Q
 
 
 ```bash
-head modern.admixsnps.10.P
+head /mnt/NAS/workshop/admixture/k10/run1/modern.admixsnps.10.P
 ```
 
 ```
@@ -107,7 +107,7 @@ admixture -P /mnt/NAS/workshop/admixture/ancient.admixsnps.bed 10
 ```
 
 ```bash
-cat modern.admixsnps.10.Q ancient.admixsnps.10.Q > k10.run1.all.Q
+cat /mnt/NAS/workshop/admixture/k10/run1/modern.admixsnps.10.Q /mnt/NAS/workshop/admixture/k10/run1/ancient.admixsnps.10.Q > k10.run1.all.Q
 ```
 > How do I choose the correct value for K?
 
