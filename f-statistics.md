@@ -69,7 +69,7 @@ Boncuklu Bulgarian Yoruba
 Now run f3 on the data.
 
 ```bash
-nohup $admixtools/qp3Pop -p parf3.modern > f3out.modern.log
+nohup $admixtools/qp3Pop -p parf3.modern > f3out.modern.log &
 # because the .log file contains extra lines, we grep for lines starting with the standard "result" string
 grep result f3out.modern.log > f3modern.out
 ```
