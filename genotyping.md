@@ -69,7 +69,18 @@ mkdir snpcall
 
 cd snpcall
 
-less /mnt/NAS/workshop/genotyping/scripts/parmerge
+cat > /mnt/NAS/workshop/genotyping/scripts/parmerge <<EOF
+geno1:            HumanOrigins.geno
+snp1:             HumanOrigins.snp
+ind1:             HumanOrigins.ind
+geno2:            Tep001.out.geno.txt
+snp2:             Tep001.out.snp.txt
+ind2:             Tep001.out.ind.txt
+genooutfilename:  ho.all.geno
+snpoutfilename:   ho.all.snp
+indoutfilename:   ho.all.ind
+strandcheck:      NO
+EOF
 
 cp /mnt/NAS/workshop/genotyping/scripts/parmerge ./
 
