@@ -57,7 +57,11 @@ AdmixTools/bin/convertf -p eigen2ped
 ```bash
 /usr/local/sw/samtools-1.9/samtools mpileup -R -B -q30 -Q30 -l /mnt/NAS/workshop/genotyping/positions.bed -f /mnt/NAS/workshop/prep/hs37d5.fa Tep001_031102_15.merged.hs37d5.fa.cons.90perc.trim.bam > Tep001pileup.txt
 
+# If you are using sequenceTools version 1.2.2 
 /usr/local/sw/sequenceTools/pileupCaller --sampleNames Tep001 -f /mnt/NAS/workshop/genotyping/eigenfile.snp -o EigenStrat -e Tep001.out < Tep001pileup.txt
+
+# If you are using sequenceTools version 1.4.0.5
+/usr/local/sw/sequenceTools_1.4/pileupCaller --randomHaploid --sampleNames Tep001 -f /mnt/NAS/workshop/genotyping/eigenfile.snp -o EigenStrat -e Tep001.out < Tep001pileup.txt
 ```
 
 **merging ancient samples with modern**
