@@ -1,4 +1,4 @@
-# Workshop in computational analysis of ancient genome
+# Workshop in computational analysis of ancient genomes
 
 ## General info
 
